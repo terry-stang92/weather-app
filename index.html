@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="main-container">
+    <!-- Search Bar + Toggle -->
+    <div class="search-section">
+      <div class="search-bar">
+        <img src="Search.svg" alt="Search" class="search-icon" />
+        <input type="text" placeholder="Search city..." class="search-input"/>
+      </div>
+      <div class="unit-toggle">
+        <button class="unit-btn active">°C</button>
+        <button class="unit-btn">°F</button>
+      </div>
+    </div>
+
+    <!-- Main Top Section: Weather + Hourly -->
+    <div class="top-section">
+      <div class="weather-card">
+        <div class="weather-left">
+          <div class="weather-temp">-1°</div>
+          <div class="weather-icon"><img src="13d.png" alt="Snow"/></div>
+          <div class="weather-status">Snow</div>
+          <div class="weather-feelslike">Feel like: -4°C</div>
+        </div>
+        <div class="weather-right">
+          <div class="weather-city">Helsinki</div>
+          <div class="weather-time">11:45 AM</div>
+          <div class="weather-wind">
+            <img src="wind.png" alt="Wind" class="wind-icon"/> 5.14 m/s
+          </div>
+          <div class="weather-range">-1° to 3°</div>
+        </div>
+      </div>
+      <div class="hourly-forecast-row">
+        <div class="hour-card">
+          <span class="hour-time">9:00 AM</span>
+          <img class="hour-icon" src="13d.png" alt="Snow">
+          <span class="hour-desc">Snow</span>
+          <span class="hour-temp">-1°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">12:00 AM</span>
+          <img class="hour-icon" src="10d.png" alt="Drizzle">
+          <span class="hour-desc">Drizzle</span>
+          <span class="hour-temp">0°</span>
+        </div>
+        <!-- Repite hour-card según tus datos -->
+        <div class="hour-card">
+          <span class="hour-time">3:00 PM</span>
+          <img class="hour-icon" src="13d.png" alt="Snow">
+          <span class="hour-desc">Snow</span>
+          <span class="hour-temp">-1°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">6:00 PM</span>
+          <img class="hour-icon" src="01d.png" alt="Clear">
+          <span class="hour-desc">Clear</span>
+          <span class="hour-temp">3°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">9:00 PM</span>
+          <img class="hour-icon" src="50d.png" alt="Mist">
+          <span class="hour-desc">Mist</span>
+          <span class="hour-temp">2°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">12:00 PM</span>
+          <img class="hour-icon" src="11d.png" alt="Thunderstorm">
+          <span class="hour-desc">Thunderstorm</span>
+          <span class="hour-temp">1°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">3:00 AM</span>
+          <img class="hour-icon" src="09d.png" alt="Rain">
+          <span class="hour-desc">Rain</span>
+          <span class="hour-temp">1°</span>
+        </div>
+        <div class="hour-card">
+          <span class="hour-time">6:00 AM</span>
+          <img class="hour-icon" src="02d.png" alt="Clouds">
+          <span class="hour-desc">Clouds</span>
+          <span class="hour-temp">0°</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Section: Cities + Forecast -->
+    <div class="bottom-section">
+      <div class="cities-section">
+        <h3>Other large cities</h3>
+        <div class="city-card">
+          <div>
+            <span class="city-country">US</span>
+            <span class="city-name">New York</span>
+          </div>
+          <div class="city-weather">Clear sky</div>
+          <div class="city-temp">14° <img src="01d.png" alt="Clear" class="city-icon"/></div>
+        </div>
+        <div class="city-card">
+          <div>
+            <span class="city-country">Denmark</span>
+            <span class="city-name">Copenhagen</span>
+          </div>
+          <div class="city-weather">Snow</div>
+          <div class="city-temp">0° <img src="13d.png" alt="Snow" class="city-icon"/></div>
+        </div>
+        <div class="city-card">
+          <div>
+            <span class="city-country">Vietnam</span>
+            <span class="city-name">Ho Chi Minh City</span>
+          </div>
+          <div class="city-weather">Thunderstorm</div>
+          <div class="city-temp">28° <img src="11d.png" alt="Thunderstorm" class="city-icon"/></div>
+        </div>
+      </div>
+      <div class="forecast-section">
+        <h3>5-day forecast</h3>
+        <div class="forecast-card">
+          <div class="forecast-day">
+            <img src="02d.png" alt="Clouds" class="forecast-icon"/>
+            <span>Today</span>
+            <span>Clouds</span>
+          </div>
+          <div class="forecast-bar"><div class="bar" style="width:60%"></div></div>
+          <span class="forecast-temp">-1°</span>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-day">
+            <img src="13d.png" alt="Snow" class="forecast-icon"/>
+            <span>Fri</span>
+            <span>Snow</span>
+          </div>
+          <div class="forecast-bar"><div class="bar" style="width:80%"></div></div>
+          <span class="forecast-temp">5°</span>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-day">
+            <img src="01d.png" alt="Clear" class="forecast-icon"/>
+            <span>Sat</span>
+            <span>Clear</span>
+          </div>
+          <div class="forecast-bar"><div class="bar" style="width:90%"></div></div>
+          <span class="forecast-temp">6°</span>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-day">
+            <img src="02d.png" alt="Clouds" class="forecast-icon"/>
+            <span>Sun</span>
+            <span>Clouds</span>
+          </div>
+          <div class="forecast-bar"><div class="bar" style="width:95%"></div></div>
+          <span class="forecast-temp">7°</span>
+        </div>
+        <div class="forecast-card">
+          <div class="forecast-day">
+            <img src="11d.png" alt="Thunderstorm" class="forecast-icon"/>
+            <span>Mon</span>
+            <span>Thunderstorm</span>
+          </div>
+          <div class="forecast-bar"><div class="bar" style="width:50%"></div></div>
+          <span class="forecast-temp">8°</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
